@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".RunLengthActivity">
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="32dp"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        tools:text="MSG" />
+
+    <EditText
+        android:id="@+id/etText"
+        android:layout_width="match_parent"
+        android:layout_height="36dp"
+        android:layout_margin="8dp"
+        android:background="@drawable/rounded_edittext"
+        android:gravity="center"
+        android:hint="@string/enter_message"
+        android:inputType="text"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        tools:ignore="Autofill" />
+
+    <RadioGroup
+        android:id="@+id/rgType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="0.5"
+            android:checked="true"
+            android:text="@string/text"
+            android:textColor="@android:color/white" />
+
+        <RadioButton
+            android:id="@+id/rbBinary"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="0.5"
+            android:text="@string/binary"
+            android:textColor="@android:color/white" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnDecompress"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_margin="8dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/rounded_button"
+            android:paddingStart="8dp"
+            android:text="@string/decompress"
+            tools:ignore="ButtonStyle,RtlSymmetry" />
+
+        <Button
+            android:id="@+id/btnCompress"
+            android:layout_width="0dp"
+            android:layout_height="36dp"
+            android:layout_margin="8dp"
+            android:layout_weight="0.5"
+            android:background="@drawable/rounded_button"
+            android:paddingStart="8dp"
+            android:text="@string/compress"
+            tools:ignore="ButtonStyle,RtlSymmetry" />
+
+    </LinearLayout>
+
+</LinearLayout>

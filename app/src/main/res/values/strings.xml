@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Compression Methods</string>
+    <string name="logo">Logo</string>
+    <string name="huffman">Huffman</string>
+    <string name="run_length">Run Length</string>
+    <string name="enter_message">Enter a message</string>
+    <string name="compress">Compress</string>
+    <string name="decompress">Decompress</string>
+    <string name="text">Text</string>
+    <string name="binary">Binary</string>
+</resources>
